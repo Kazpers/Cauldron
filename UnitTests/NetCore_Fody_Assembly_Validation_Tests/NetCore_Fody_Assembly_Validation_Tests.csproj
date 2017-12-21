@@ -26,7 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Fody" Version="2.2.1" />
+    <PackageReference Include="Fody" Version="2.3.3" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.5.0" />
     <PackageReference Include="MSTest.TestAdapter" Version="1.2.0" />
     <PackageReference Include="MSTest.TestFramework" Version="1.2.0" />
@@ -44,7 +44,7 @@
     <ProjectReference Include="..\..\NetStandard\Cauldron.Core.Threading\Cauldron.Core.Threading.csproj" />
     <ProjectReference Include="..\..\NetStandard\Cauldron.Interception\Cauldron.Interception.csproj" />
     <ProjectReference Include="..\..\Win32\Cauldron.Win32.UserInformation\Cauldron.Win32.UserInformation.csproj" />
-    <ProjectReference Include="..\Win32_Fody_Assembly_Validation_Tests\Win32_Fody_Assembly_Validation_Tests.csproj" />
+    <ProjectReference Include="..\Resources\Fody_Assembly_Validation_External_Resources\Fody_Assembly_Validation_External_Resources.csproj" />
   </ItemGroup>
 
 </Project>

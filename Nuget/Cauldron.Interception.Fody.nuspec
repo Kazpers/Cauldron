@@ -10,11 +10,12 @@
     <projectUrl>https://github.com/Capgemini/Cauldron</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/Capgemini/Cauldron/master/cauldron.png</iconUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <description>Fody add-in that provides method, property, field and constructor interception. Supports NetStandard2.0 and UWP.</description>
+    <description>Fody add-in that provides method, property, field and constructor interception. Supports Net45, NetStandard2.0 and UWP.</description>
     <summary>Fody add-in that provides method, property and field interception.</summary>
     <copyright>Copyright (c) 2016 Capgemini Deutschland GmbH</copyright>
     <tags>Toolkit Capgemini Cauldron Interception interceptor interception AOP Fody Cecil CIL ILWeaving</tags>
     <releaseNotes>
+      2017.12.20 - [A] Real support for Net45 added - The weaver itself still requires an installed Net461.
       2017.12.14 - [A] Constructor interceptor added.
       2017.12.11 - [B] Sort of fixed the issue that jumping to errors on async methods did not work.
       2017.12.11 - [B] Fixed a bug that caused the weaver to weav types that does not exist and then throws exceptions.
@@ -33,7 +34,7 @@
       2017.12.04 - [R] Useless method cache removed from weaver.
     </releaseNotes>
     <dependencies>
-      <dependency id="Fody" version="2.2.1" />
+      <dependency id="Fody" version="2.3.3" />
     </dependencies>
   </metadata>
   <files>
@@ -41,8 +42,10 @@
     <file src="..\Fody\Cauldron.Interception.Cecilator\bin\Release\Cauldron.Interception.Cecilator.dll" target="Cauldron.Interception.Cecilator.dll" />
     <file src="..\Fody\Cauldron.Interception.Cecilator\bin\Release\Cauldron.Interception.Cecilator.pdb" target="Cauldron.Interception.Cecilator.pdb" />
     <file src="..\Fody\Cauldron.Interception.Cecilator\bin\Release\System.ValueTuple.dll" target="System.ValueTuple.dll" />
-    <!-- Desktop -->
+    <!-- Desktop Net461 -->
     <file src="..\NetStandard\Cauldron.Interception\bin\Release\netstandard2.0\Cauldron.Interception**" target="lib\net461" />
+    <!-- Desktop Net45 -->
+    <file src="..\Win32\Net45\Cauldron.Win32.Net45.Interception\bin\Release\Cauldron.Interception**" target="lib\net45" />
     <!-- UWP -->
     <file src="..\UWP\Cauldron.Interception\bin\Release\Cauldron.Interception**" target="lib\uap10.0" />
     <!-- Net Standard 2.0 -->
